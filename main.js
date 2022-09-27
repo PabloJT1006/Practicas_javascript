@@ -6,6 +6,7 @@ var HalloweenController = function() {
         
         init: function() {
             this.bind_listeners();
+            console.log("hola");
         },
 
         bind_listeners: function() {
@@ -25,7 +26,7 @@ var HalloweenController = function() {
         },
 
         drag_listener: function() {
-            
+
         },
 
         clicked_element: function() {
