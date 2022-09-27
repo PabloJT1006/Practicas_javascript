@@ -1,4 +1,4 @@
-var HalloweenController = function() {
+var BetisController = function() {
     return {
         config: {
 
@@ -19,8 +19,8 @@ var HalloweenController = function() {
 
             image.attr('src', 'balon.png');
 
-            image.on('mousein', HalloweenController.clicked_element);
-            image.on('mouseout', HalloweenController.released_element);
+            image.on('mousein', BetisController.clicked_element);
+            image.on('mouseout', BetisController.released_element);
 
             $('#cuadrado').append(image);           
         },
