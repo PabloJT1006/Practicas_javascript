@@ -5,6 +5,7 @@ var BetisController = function() {
         },
         
         init: function() {
+            debugger;
             this.bind_listeners();
             console.log("hola");
         },
@@ -37,4 +38,4 @@ var BetisController = function() {
             $(this).data('clicked',false)
         }
     }
-}
+}();
