@@ -5,6 +5,7 @@ var BetisController = function() {
         },
         
         init: function() {
+            debugger; //Breakpoint to debug the code
             this.bind_listeners();
             console.log("hola");
         },
