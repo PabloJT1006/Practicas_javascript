@@ -16,7 +16,7 @@ var BetisController = function() {
         },
 
         create_new_element: function() {
-            let image = $("<img>");
+            let image = $("<img class='image'>");
 
             image.attr('src', 'balon.png');
 
@@ -27,7 +27,10 @@ var BetisController = function() {
         },
 
         drag_listener: function() {
-
+            var imagenes = document.getElementsByClassName('image');
+            for (let i = 0; i < imagenes.length; i++) {
+                imagenes[i].setAttribute("draggable","true");                
+            }
         },
 
         clicked_element: function() {
@@ -35,7 +38,7 @@ var BetisController = function() {
         },
 
         released_element: function() {
-            $(this).data('clicked',false)
+            $(this).data('unclicked',true)
         }
     }
 }();
