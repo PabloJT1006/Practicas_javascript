@@ -4,22 +4,17 @@ $(function(){
     $("#aniadir").click(function(){
        balon++;
        nombre_id="balon-"+balon;
-       let image = $("<img>");
-
-       image.attr('src', 'balon.png');
-       image.attr('id', nombre_id);
-
-       $('#cuadrado').append(image);
+       $('#cuadrado').append('<img id="'+nombre_id+'" src="balon.png" alt="">');
        
        
-    image = document.getElementById(nombre_id);
+       let image = document.getElementById(nombre_id);
 /*image.onmousedown = function(){
     document.getElementById("cuadrado").style.backgroundColor="pink";
     
 };*/
 
 /*HAcer que se pueda arrastrar*/
-    image.onmousedown = function(event){
+image.onmousedown = function(event){
     
     //Esto se hace mientras se este pulsando el boton 
     image.style.position="absolute";/*para que su posicion sea absoluta, que donde se mueva se quede*/
