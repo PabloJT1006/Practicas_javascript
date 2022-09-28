@@ -11,7 +11,8 @@
     border:solid purple 14px;
     z-index: -1;
     object-fit: cover;
-    overflow:auto;
+    overflow:-moz-hidden-unscrollable;
+    
 
 }
 
