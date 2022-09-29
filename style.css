@@ -9,9 +9,8 @@
     width: 30%;
     background-color: gray;
     border:solid purple 14px;
-    z-index: -1;
     object-fit: cover;
-    overflow:-moz-hidden-unscrollable;
+    overflow:hidden;
     
 
 }
