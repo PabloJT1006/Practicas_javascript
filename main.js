@@ -16,9 +16,13 @@ var BetisController = function() {
         },
 
         create_new_element: function() {
-            let image = $("<img class='image'>");
+            let image = $("<img>");
+            
+            balon++;
+            nombre_id="balon-"+balon;
 
             image.attr('src', 'balon.png');
+            image.attr('id',nombre_id)
 
             image.on('mousein', BetisController.clicked_element);
             image.on('mouseout', BetisController.released_element);
@@ -27,10 +31,7 @@ var BetisController = function() {
         },
 
         drag_listener: function() {
-            var imagenes = document.getElementsByClassName('image');
-            for (let i = 0; i < imagenes.length; i++) {
-                imagenes[i].setAttribute("draggable","true");                
-            }
+            
         },
 
         clicked_element: function() {
